@@ -5,3 +5,5 @@ The code takes in post from Reddit that including key word about drugs, and gene
 The data.py takes care of input data. analysis.py make a small process on data to make content that can be processed to build graph.
 The model.py use lsh search for drug-related terms that mentioned in the post, and build an association graph for terms that appear in the post.
 
+The code can be excuted by python run.py data analysis model
+
