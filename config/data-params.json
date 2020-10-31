@@ -1,5 +1,5 @@
 {
-    "year": 2017,
-    "location": "San Diego",
-    "group": "Students"
+    "reddit":'teams/DSC180A_FA20_A00/a07group01/data/drugs_subs_year.json',
+    'ontology':'teams/DSC180A_FA20_A00/a07group01/data/opioid_ontologies_relation.csv',
+    'mesh_file':'teams/DSC180A_FA20_A00/a07group01/data/MESH.csv'
 }

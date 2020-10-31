@@ -7,9 +7,9 @@ sys.path.insert(0, 'src/data')
 sys.path.insert(0, 'src/analysis')
 sys.path.insert(0, 'src/model')
 
-from etl import get_data
-from analysis import compute_aggregates
-from model import train
+from data import get_data
+from analysis import make_content
+from model import build_graph
 
 
 def main(targets):
@@ -25,23 +25,20 @@ def main(targets):
             data_cfg = json.load(fh)
 
         # make the data target
-        data = get_data(**data_cfg)
+        search_terms,data = get_data(**data_cfg)
 
     if 'analysis' in targets:
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
 
         # make the data target
-        compute_aggregates(data, **analysis_cfg)
-
+        content=make_content(search_terms, data, **analysis_cfg)
     if 'model' in targets:
         with open('config/model-params.json') as fh:
             model_cfg = json.load(fh)
 
         # make the data target
-        train(data, **model_cfg)
-
-    return
+        build_graph(content, **model_cfg)
 
 
 if __name__ == '__main__':

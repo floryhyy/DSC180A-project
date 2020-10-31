@@ -1,4 +1,3 @@
 {
-    "agg_by": "week",
-    "outpath": "data/temp/agg.csv"
+    "textcol_name":"text",
 }
