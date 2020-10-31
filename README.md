@@ -7,3 +7,12 @@ The model.py use lsh search for drug-related terms that mentioned in the post, a
 
 The code can be excuted by python run.py data analysis model
 
+
+
+```
+### Responsibilities
+* Flory developed the majority part of the code,edited LSH part, and formatted code into .py
+* Hanbyul developed the LSH part of code and wrote first half of the Introduction
+* Gunther got reddit data through API and wrote second half of the Introduction
+```
+
