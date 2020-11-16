@@ -1,6 +1,3 @@
 {
-    
-    "n_permutations": 50,
-    "n_gram": 3,
-    "outpath": "data/out/model.pkl"
+    "outpath": "data/out/opioid_knowledge_graph.txt"
 }

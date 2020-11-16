@@ -1,32 +1,19 @@
 import networkx as nx
 from snapy import MinHash, LSH
 
-def build_graph(content, n_permutations, n_gram,out_path):
-    lsh = create_lsh(content, n_permutations, n_gram)
+def build_graph(lsh,content,out_path):
     graph = add_similar_edges(lsh,content)
     f = open(out_path, "w")
     f.close()
     for i in opioid_drugs.edges:
         f.write(i+' '+opioid_drugs.edges[i]['author_id']+'\n')
     f.close()
-
     
-def create_lsh(content, n_permutations, n_gram):
-    labels = content.keys()
-    values = content.values()
-    #Create MinHash object
-    minhash = MinHash(values, n_gram=n_gram, permutations=n_permutations, hash_bits=64, seed=3)
-    
-    #Create LSH model
-    lsh = LSH(minhash, labels, no_of_bands=5)
-    
-    return lsh
 def add_similar_edges(lsh, content):
     graph=nx.DiGraph()
     #For all items in content
     ls = {}
-    for index, text in content.items():
-        
+    for index, text in content.items():        
         #If item is one of the search terms
         if type(index) == int:
             q = lsh.query(index, min_jaccard=0.2)
