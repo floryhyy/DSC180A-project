@@ -25,6 +25,7 @@ def main(targets):
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
         # load short version of data
+        fake_reddits.json  terms.txt
         search_terms,texts,authors = get_data(**data_cfg)
         search_terms = search_terms[:100]
         #format data
