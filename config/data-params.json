@@ -1,5 +1,5 @@
 {
     "ontology":"/teams/DSC180A_FA20_A00/a07opioidoverdoseprevalence/data/opioid_ontologies_relation.csv",
     "mesh_file":"/teams/DSC180A_FA20_A00/a07opioidoverdoseprevalence/data/MESH.csv",
-    "reddit_names":"/teams/DSC180A_FA20_A00/a07opigioidoverdoseprevalence/data/reddit_data_names.txt"
+    "reddit_names":"/teams/DSC180A_FA20_A00/a07opioidoverdoseprevalence/data/reddit_data_names.txt"
 }
