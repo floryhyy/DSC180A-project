@@ -5,8 +5,8 @@ def build_graph(lsh,content,out_path):
     graph = add_similar_edges(lsh,content)
     f = open(out_path, "w")
     f.close()
-    for i in opioid_drugs.edges:
-        f.write(i+' '+opioid_drugs.edges[i]['author_id']+'\n')
+    for i in graph.edges:
+        f.write(i+' '+graph.edges[i]['author_id']+'\n')
     f.close()
     
 def add_similar_edges(lsh, content):
