@@ -21,12 +21,24 @@ def main(targets):
     
     `main` runs the targets in order of data=>analysis=>model.
     '''
-
+    if 'test' in targets:
+        with open('config/data-params.json') as fh:
+            data_cfg = json.load(fh)
+        # load short version of data
+        search_terms,texts,authors = get_data(**data_cfg)
+        search_terms = search_terms[:100]
+        #format data
+        content = make_content_all(search_terms,texts,authors)
+        sentences = []
+        for text in texts:
+            sentences += text_to_sentences(text)
+        
     if 'data' in targets or 'graph' in targets:
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
-        # make the data target
+        # load data
         search_terms,texts,authors = get_data(**data_cfg)
+        search_terms = search_terms[:100]
         #format data
         content = make_content_all(search_terms,texts,authors)
         sentences = []
