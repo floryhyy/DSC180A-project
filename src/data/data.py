@@ -10,7 +10,7 @@ def get_data(ontology,mesh_file,reddit_names):
     all_text = []
     author_ids = []
     if '.json' in reddit_names:
-        df = pd.read_json(filepath)
+        df = pd.read_json(reddit_names)
         all_text.extend(list(df['text']))
         author_ids.extend(list(df.index))
     else:
