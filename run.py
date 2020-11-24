@@ -31,7 +31,7 @@ def main(targets):
         content = make_content_all(search_terms,texts,authors)
         sentences = []
         for text in texts:
-            sentences += text_to_sentences(text, tokenizer)
+            sentences += text_to_sentences(text)
             
     if 'analysis' in targets or 'graph' in targets:
         with open('config/analysis-params.json') as fh:
