@@ -9,6 +9,7 @@ sys.path.insert(0, 'src/model')
 
 from data import get_data
 from format_data import make_content_all
+from format_data import text_to_sentences
 from analysis import print_score_from_models
 from model import build_graph
 
