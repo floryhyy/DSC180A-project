@@ -6,8 +6,8 @@ def build_graph(lsh,content,out_path):
     f = open(out_path, "w")
     f.close()
     for i in graph.edges:
-        print(i,graph.edges[i]['author_id'])
-        f.write(i+' '+graph.edges[i]['author_id']+'\n')
+        f.write(i)
+        f.write(' '+graph.edges[i]['author_id']+'\n')
     f.close()
     
 def add_similar_edges(lsh, content):
