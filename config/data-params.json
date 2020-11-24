@@ -1,0 +1,5 @@
+{
+    'ontology':'teams/DSC180A_FA20_A00/a07group01/data/opioid_ontologies_relation.csv',
+    'mesh_file':'teams/DSC180A_FA20_A00/a07group01/data/MESH.csv'
+    'reddit_names':'teams/DSC180A_FA20_A00/a07group01/data/reddit_data_names.txt'
+}
