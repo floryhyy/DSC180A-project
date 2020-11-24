@@ -34,7 +34,7 @@ def print_score_from_models(sentences,content,mesh_terms,num_feat,num_neighbors,
         for n in lsh.query(i,min_jaccard=0.2):
             if (type(i)==int) & (type(n)!=int):
                 term = content[n].strip('.').strip('?').strip('"')
-                if (term in model.wv.vocab) & (content[i] in model.wv.vocab):
+                #if (term in model.wv.vocab) & (content[i] in model.wv.vocab):
                     #print(content[i],' ------> ', term)
                     #print(model.wv.similarity(content[i], term))
     return lsh,model
