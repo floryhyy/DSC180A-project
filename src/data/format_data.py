@@ -30,8 +30,11 @@ def text_to_list (text):
     return words
 
 def text_to_sentences (text):
-    nltk.download('punkt')
-    tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
+    try:
+        tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
+    except:
+        nltk.download('punkt')
+        tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
     raw_sentences = tokenizer.tokenize(text.strip())
 
     sentences=[]

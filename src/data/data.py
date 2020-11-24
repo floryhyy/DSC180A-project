@@ -13,7 +13,6 @@ def get_data(ontology,mesh_file,reddit_names):
     author_ids = []
     for t in filenames:
         filepath = '/teams/DSC180A_FA20_A00/a07opioidoverdoseprevalence/data/' + t + '.json'
-        print(filepath)
         df = pd.read_json(filepath)
         all_text.extend(list(df['text']))
         author_ids.extend(list(df.index))
