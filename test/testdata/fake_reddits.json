@@ -1,2 +1,3 @@
-{"userA":{"text":"I love fentanyl and hydromorphone","comments":{"userB":{"body":"I hate fentanyl"}}},
+{"userA":{"text":"I love fentanyl and hydromorphone"},
+"userB":{"text":"I hate fentanyl"},
 "userC":{"text":"percocet give me headache"}}
