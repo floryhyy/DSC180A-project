@@ -30,7 +30,7 @@ def main(targets):
         #format data
         content = make_content_all(search_terms,texts,authors)
         sentences = []
-        for text in all_text:
+        for text in texts:
             sentences += text_to_sentences(text, tokenizer)
             
     if 'analysis' in targets or 'graph' in targets:
