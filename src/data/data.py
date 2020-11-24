@@ -1,6 +1,5 @@
 import pandas as pd
 def get_data(ontology,mesh_file,reddit_names):
-    df1=pd.read_json(reddit)
     on=pd.read_csv(ontology,usecols=['opioid1'])
     mesh=pd.read_csv('MESH.csv',usecols=['Preferred Label'])
     mesh_ls = list(set(mesh['Preferred Label']))
