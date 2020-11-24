@@ -25,8 +25,10 @@ def main(targets):
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
         # load short version of data
-        fake_reddits.json  terms.txt
-        search_terms,texts,authors = get_data(**data_cfg)
+        reddit = 'test/testdata/fake_reddits.json'
+        term1 = 'test/testdata/terms.txt'
+        term2 = 'test/testdata/terms2.txt'
+        search_terms,texts,authors = get_data(term1,term2,reddit)
         search_terms = search_terms[:100]
         #format data
         content = make_content_all(search_terms,texts,authors)
@@ -34,6 +36,13 @@ def main(targets):
         for text in texts:
             sentences += text_to_sentences(text)
         
+        with open('config/analysis-params.json') as fh:
+            analysis_cfg = json.load(fh)
+        # make the data target
+        lsh,word2vec=print_score_from_models(sentences,content,search_terms, **analysis_cfg)
+        
+        build_graph(lsh,content, 'test_result.txt')
+
     if 'data' in targets or 'graph' in targets:
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
