@@ -2,6 +2,7 @@ import nltk
 import nltk.data
 import pandas as pd
 import re
+import nltk
 def make_content_all(search_terms, text, authors):
     #Initialize a dictionary
     content = dict()
@@ -29,6 +30,7 @@ def text_to_list (text):
     return words
 
 def text_to_sentences (text):
+    nltk.download('punkt')
     tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
     raw_sentences = tokenizer.tokenize(text.strip())
 
