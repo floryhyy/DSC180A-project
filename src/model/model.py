@@ -6,7 +6,7 @@ def build_graph(lsh,content,out_path):
     f = open(out_path, "w")
     f.close()
     for i in graph.edges:
-        f.write(i)
+        f.write(i[0]+' '+i[1])
         f.write(' '+graph.edges[i]['author_id']+'\n')
     f.close()
     
