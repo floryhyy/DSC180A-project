@@ -48,7 +48,7 @@ def main(targets):
             data_cfg = json.load(fh)
         # load data
         search_terms,texts,authors = get_data(**data_cfg)
-        search_terms = search_terms[:100]
+        search_terms = search_terms
         #format data
         content = make_content_all(search_terms,texts,authors)
         sentences = []
