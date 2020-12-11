@@ -7,10 +7,10 @@ from collections import Counter
 class spacy_txt():
 
     def read_file(self, dir_path):
-        v = []
+        e = []
         n = []
         docs = []
-        for filename in os.listdir(dir_path):
+        for filename in sorted(os.listdir('DEA')):
             doc = ParsedObj.bare_document()
             file = open(dir_path+"/"+filename, "r",encoding="utf8",errors='ignore')
             Lines = file.readlines()
@@ -18,18 +18,18 @@ class spacy_txt():
             for l in Lines:
                 sent = ParsedObj.bare_sentence()
                 ent, noun, verb = self.process_sent(l)
-                v.extend(verb)
-                n.extend(ent)
-                sent.noun.append(noun)
-                sent.verb.append(verb)
-                sent.ner.append(ent)
+                n.extend(noun)
+                e.extend(ent)
+                sent.noun.extend(noun)
+                sent.verb.extend(verb)
+                sent.ner.extend(ent)
                 sent.sentence_id=i
                 doc.sentences[i]= sent
                 i=i+1
             doc.path=dir_path+"/"+filename
             doc.doc_id=filename
             docs.append(doc)
-        return docs, v, n
+        return docs, e, n
     def process_sent(self, str_text):
         nlp = spacy.load("en_core_web_sm")
         merge_pipe = nlp.create_pipe("merge_noun_chunks")

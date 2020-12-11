@@ -1,12 +1,14 @@
 class bare_sentence:
-    senetence_id=None
-    noun = []
-    verb = []
-    ner = []
+    def __init__(self):
+        self.senetence_id=None
+        self.noun = []
+        self.verb = []
+        self.ner = []
 class bare_document:
-    doc_id = None
-    path = None
-    sentences = {}
+    def __init__(self):
+        self.doc_id = None
+        self.path = None
+        self.sentences = {}
 class bare_collection:
     clo_id = None
     doc = {}
