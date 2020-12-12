@@ -10,7 +10,8 @@ class spacy_txt():
         e = []
         n = []
         docs = []
-        for filename in sorted(os.listdir('DEA')):
+        print(sorted(os.listdir(dir_path)))
+        for filename in sorted(os.listdir(dir_path)):
             doc = ParsedObj.bare_document()
             file = open(dir_path+"/"+filename, "r",encoding="utf8",errors='ignore')
             Lines = file.readlines()
