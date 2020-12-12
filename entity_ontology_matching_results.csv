@@ -1,0 +1,305 @@
+Entity_index,Entity,matched ontology,jaccard similarity score,ontology type
+doc1.txt_sentence_9_noun_1,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_18_noun_17,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc19.txt_sentence_48_noun_6,Medicare,medicare,1.0,http://purl.bioontology.org/ontology/STY/T089|http://purl.bioontology.org/ontology/STY/T064
+doc19.txt_sentence_48_noun_7,Medicaid,medicaid,1.0,http://purl.bioontology.org/ontology/STY/T089|http://purl.bioontology.org/ontology/STY/T064
+doc19.txt_sentence_48_noun_14,Medicare,medicare,1.0,http://purl.bioontology.org/ontology/STY/T089|http://purl.bioontology.org/ontology/STY/T064
+doc19.txt_sentence_48_noun_15,Medicaid,medicaid,1.0,http://purl.bioontology.org/ontology/STY/T089|http://purl.bioontology.org/ontology/STY/T064
+doc10.txt_sentence_16_noun_14,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc10.txt_sentence_18_noun_2,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc11.txt_sentence_14_noun_20,Law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc19.txt_sentence_8_noun_32,Medicare,medicare,1.0,http://purl.bioontology.org/ontology/STY/T089|http://purl.bioontology.org/ontology/STY/T064
+doc11.txt_sentence_14_noun_31,Law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc11.txt_sentence_24_noun_4,life,life,1.0,http://purl.bioontology.org/ontology/STY/T078
+doc11.txt_sentence_24_noun_14,life,life,1.0,http://purl.bioontology.org/ontology/STY/T078
+doc13.txt_sentence_13_noun_1,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc14.txt_sentence_8_noun_0,LOS ANGELES,los angeles,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc14.txt_sentence_16_noun_10,life,life,1.0,http://purl.bioontology.org/ontology/STY/T078
+doc19.txt_sentence_8_noun_33,Medicaid,medicaid,1.0,http://purl.bioontology.org/ontology/STY/T089|http://purl.bioontology.org/ontology/STY/T064
+doc18.txt_sentence_27_noun_13,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_36_noun_14,life,life,1.0,http://purl.bioontology.org/ontology/STY/T078
+doc18.txt_sentence_13_noun_8,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_11_noun_5,Mexico,mexico,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_11_noun_13,Mexico,mexico,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_13_noun_7,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_9_noun_15,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_17_noun_13,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_11_noun_14,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_15_noun_13,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_26_noun_4,minors,minors,1.0,http://purl.bioontology.org/ontology/STY/T098
+doc18.txt_sentence_20_noun_6,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_20_noun_14,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_24_noun_11,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_24_noun_13,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_24_noun_22,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_24_noun_26,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_36_noun_9,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc14.txt_sentence_56_noun_9,Los Angeles,los angeles,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_8_noun_3,Mexico,mexico,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc1.txt_sentence_8_noun_1,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_17_noun_21,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_20_noun_7,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_20_noun_15,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_27_noun_12,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_12_noun_14,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_22_noun_2,guilt,guilt,1.0,http://purl.bioontology.org/ontology/STY/T041
+doc18.txt_sentence_8_noun_0,Annual report,annual report,1.0,http://purl.bioontology.org/ontology/STY/T170|http://purl.bioontology.org/ontology/STY/T073
+doc15.txt_sentence_24_noun_18,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_10_noun_7,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_16_noun_19,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_16_noun_35,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_18_noun_3,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_20_noun_8,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_20_noun_15,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_8_noun_3,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_24_noun_18,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_8_noun_0,LOS ANGELES,los angeles,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc16.txt_sentence_9_noun_8,investigative techniques,investigative techniques,1.0,http://purl.bioontology.org/ontology/STY/T058
+doc15.txt_sentence_16_noun_10,life,life,1.0,http://purl.bioontology.org/ontology/STY/T078
+doc15.txt_sentence_36_noun_9,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc15.txt_sentence_36_noun_14,life,life,1.0,http://purl.bioontology.org/ontology/STY/T078
+doc15.txt_sentence_56_noun_9,Los Angeles,los angeles,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc16.txt_sentence_25_noun_8,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc18.txt_sentence_15_noun_4,law enforcement,law enforcement,1.0,http://purl.bioontology.org/ontology/STY/T064
+doc16.txt_sentence_33_noun_2,investigative techniques,investigative techniques,1.0,http://purl.bioontology.org/ontology/STY/T058
+doc13.txt_sentence_9_noun_26,hearing,hearing,1.0,http://purl.bioontology.org/ontology/STY/T039
+doc18.txt_sentence_9_noun_9,illicit drugs,illicit drugs,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131
+doc18.txt_sentence_15_noun_0,Illicit drugs,illicit drugs,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131
+doc1.txt_sentence_35_noun_5,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_22_noun_5,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_30_noun_14,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_7_noun_4,heroin,heroin,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_9_noun_22,Mexico,mexico,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc12.txt_sentence_30_noun_15,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_26_noun_11,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_11_noun_0,records,records,1.0,http://purl.bioontology.org/ontology/STY/T170|http://purl.bioontology.org/ontology/STY/T073
+doc1.txt_sentence_24_noun_6,substance,substance,1.0,
+doc1.txt_sentence_26_noun_2,social isolation,social isolation,1.0,http://purl.bioontology.org/ontology/STY/T054
+doc1.txt_sentence_26_noun_7,substance,substance,1.0,
+doc11.txt_sentence_8_noun_18,statistics,statistics,1.0,http://purl.bioontology.org/ontology/STY/T170
+doc17.txt_sentence_10_noun_5,solutions,solutions,1.0,http://purl.bioontology.org/ontology/STY/T167
+doc18.txt_sentence_27_noun_17,synthetic drugs,synthetic drugs,1.0,http://purl.bioontology.org/ontology/STY/T121
+doc17.txt_sentence_10_noun_19,role,role,1.0,http://purl.bioontology.org/ontology/STY/T078|http://purl.bioontology.org/ontology/STY/T054
+doc19.txt_sentence_12_noun_7,time,time,1.0,http://purl.bioontology.org/ontology/STY/T067|http://purl.bioontology.org/ontology/STY/T079
+doc1.txt_sentence_20_noun_11,quality control,quality control,1.0,http://purl.bioontology.org/ontology/STY/T169
+doc1.txt_sentence_31_noun_26,pill,pill,1.0,http://purl.bioontology.org/ontology/STY/T122
+doc1.txt_sentence_41_noun_15,persons,persons,1.0,http://purl.bioontology.org/ontology/STY/T098
+doc11.txt_sentence_20_noun_4,Pennsylvania,pennsylvania,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc16.txt_sentence_9_noun_17,prescriptions,prescriptions,1.0,http://purl.bioontology.org/ontology/STY/T058|http://purl.bioontology.org/ontology/STY/T061
+doc17.txt_sentence_10_noun_4,prescription drug misuse,prescription drug misuse,1.0,http://purl.bioontology.org/ontology/STY/T033
+doc1.txt_sentence_16_noun_1,safety,safety,1.0,http://purl.bioontology.org/ontology/STY/T068
+doc19.txt_sentence_8_noun_25,today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc17.txt_sentence_10_noun_21,patients,patients,1.0,http://purl.bioontology.org/ontology/STY/T101|http://purl.bioontology.org/ontology/STY/T096
+doc1.txt_sentence_18_noun_18,today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc10.txt_sentence_14_noun_1,Washington,washington,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_9_noun_5,Washington,washington,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc16.txt_sentence_21_noun_22,weapons,weapons,1.0,http://purl.bioontology.org/ontology/STY/T073
+doc17.txt_sentence_8_noun_3,Washington,washington,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_17_noun_8,Virginia,virginia,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_13_noun_14,Utah,utah,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc1.txt_sentence_31_noun_17,today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc19.txt_sentence_8_noun_17,today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc10.txt_sentence_14_noun_4,today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc12.txt_sentence_18_noun_1,tablets,tablets,1.0,http://purl.bioontology.org/ontology/STY/T122
+doc13.txt_sentence_13_noun_13,Tennessee,tennessee,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc14.txt_sentence_40_noun_12,Today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc15.txt_sentence_40_noun_12,Today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc18.txt_sentence_9_noun_2,today,today,1.0,http://purl.bioontology.org/ontology/STY/T195|http://purl.bioontology.org/ontology/STY/T109
+doc17.txt_sentence_10_noun_15,pharmacies,pharmacies,1.0,http://purl.bioontology.org/ontology/STY/T058|http://purl.bioontology.org/ontology/STY/T073|http://purl.bioontology.org/ontology/STY/T093
+doc17.txt_sentence_10_noun_29,prescription drug misuse,prescription drug misuse,1.0,http://purl.bioontology.org/ontology/STY/T033
+doc12.txt_sentence_7_noun_2,Mexico,mexico,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc17.txt_sentence_10_noun_17,nurse practitioners,nurse practitioners,1.0,http://purl.bioontology.org/ontology/STY/T097
+doc14.txt_sentence_52_noun_4,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_8_noun_3,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_20_noun_2,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_44_noun_10,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_48_noun_2,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_52_noun_4,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_8_noun_7,New York,new york,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc14.txt_sentence_44_noun_10,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_16_noun_20,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_16_noun_34,methamphetamine,methamphetamine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_35_noun_3,morphine,morphine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_12_noun_2,morphine,morphine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_12_noun_17,Maryland,maryland,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc11.txt_sentence_14_noun_5,Maryland,maryland,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc14.txt_sentence_48_noun_2,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_20_noun_2,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_15_noun_3,public health,public health,1.0,http://purl.bioontology.org/ontology/STY/T091
+doc19.txt_sentence_7_noun_1,oxycodone,oxycodone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_27_noun_11,prescription drugs,prescription drugs,1.0,http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_31_noun_21,oxycodone,oxycodone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_7_noun_3,oxycodone,oxycodone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_13_noun_11,Oregon,oregon,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc17.txt_sentence_10_noun_7,opioid epidemic,opioid epidemic,1.0,http://purl.bioontology.org/ontology/STY/T068
+doc17.txt_sentence_14_noun_8,Oxycodone,oxycodone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_8_noun_28,oxycodone,oxycodone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_8_noun_3,narcotics,narcotics,1.0,http://purl.bioontology.org/ontology/STY/T039|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_44_noun_16,oxycodone,oxycodone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_52_noun_4,oxycodone,oxycodone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_35_noun_17,Naloxone,naloxone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_35_noun_24,naloxone,naloxone,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_14_noun_12,North America,north america,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_13_noun_9,New York,new york,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc1.txt_sentence_22_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_20_noun_3,Xanax,xanax,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_30_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_13_noun_6,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_18_noun_27,controlled substances,controlled substances,1.0,http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_22_noun_4,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_20_noun_1,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_21_noun_7,drug trafficking,drug trafficking,1.0,http://purl.bioontology.org/ontology/STY/T054|http://purl.bioontology.org/ontology/STY/T055
+doc15.txt_sentence_44_noun_12,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc15.txt_sentence_32_noun_2,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc15.txt_sentence_16_noun_5,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc15.txt_sentence_16_noun_2,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc15.txt_sentence_7_noun_3,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc14.txt_sentence_44_noun_12,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc14.txt_sentence_32_noun_2,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc14.txt_sentence_16_noun_5,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc14.txt_sentence_16_noun_2,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc14.txt_sentence_7_noun_3,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc11.txt_sentence_24_noun_8,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc11.txt_sentence_18_noun_12,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc11.txt_sentence_8_noun_13,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc1.txt_sentence_31_noun_1,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_18_noun_5,death,death,1.0,http://purl.bioontology.org/ontology/STY/T046|http://purl.bioontology.org/ontology/STY/T040|http://purl.bioontology.org/ontology/STY/T060|http://purl.bioontology.org/ontology/STY/T041
+doc16.txt_sentence_17_noun_15,ephedrine,ephedrine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_12_noun_15,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_22_noun_8,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_11_noun_13,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc17.txt_sentence_14_noun_5,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_29_noun_5,firearms,firearms,1.0,http://purl.bioontology.org/ontology/STY/T073
+doc16.txt_sentence_17_noun_11,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_9_noun_16,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_44_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_44_noun_2,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_30_noun_16,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_13_noun_12,California,california,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc15.txt_sentence_28_noun_3,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_16_noun_1,controlled substances,controlled substances,1.0,http://purl.bioontology.org/ontology/STY/T121
+doc17.txt_sentence_12_noun_19,Awareness,awareness,1.0,http://purl.bioontology.org/ontology/STY/T041
+doc15.txt_sentence_56_noun_2,Arizona,arizona,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc15.txt_sentence_12_noun_7,Arizona,arizona,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc14.txt_sentence_56_noun_2,Arizona,arizona,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc14.txt_sentence_12_noun_7,Arizona,arizona,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc13.txt_sentence_13_noun_10,Arizona,arizona,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc11.txt_sentence_20_noun_19,alprazolam,alprazolam,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_31_noun_22,alprazolam,alprazolam,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_29_noun_2,anxiety,anxiety,1.0,http://purl.bioontology.org/ontology/STY/T184|http://purl.bioontology.org/ontology/STY/T048
+doc1.txt_sentence_26_noun_4,anxiety,anxiety,1.0,http://purl.bioontology.org/ontology/STY/T184|http://purl.bioontology.org/ontology/STY/T048
+doc1.txt_sentence_20_noun_10,advertising,advertising,1.0,http://purl.bioontology.org/ontology/STY/T057
+doc11.txt_sentence_18_noun_6,Baltimore,baltimore,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc11.txt_sentence_14_noun_4,Baltimore,baltimore,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc11.txt_sentence_8_noun_21,Baltimore,baltimore,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc11.txt_sentence_8_noun_0,BALTIMORE,baltimore,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc19.txt_sentence_52_noun_22,Congress,congress,1.0,http://purl.bioontology.org/ontology/STY/T170
+doc19.txt_sentence_44_noun_15,controlled substances,controlled substances,1.0,http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_16_noun_4,controlled substances,controlled substances,1.0,http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_27_noun_14,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_26_noun_0,Cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc18.txt_sentence_15_noun_14,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc17.txt_sentence_10_noun_25,crime,crime,1.0,http://purl.bioontology.org/ontology/STY/T068|http://purl.bioontology.org/ontology/STY/T054
+doc16.txt_sentence_17_noun_19,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc16.txt_sentence_7_noun_1,Colorado,colorado,1.0,http://purl.bioontology.org/ontology/STY/T083
+doc15.txt_sentence_24_noun_7,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_20_noun_15,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_16_noun_1,controlled substances,controlled substances,1.0,http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_24_noun_7,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_20_noun_15,cocaine,cocaine,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T131|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_28_noun_12,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_26_noun_5,depression,depression,1.0,http://purl.bioontology.org/ontology/STY/T184|http://purl.bioontology.org/ontology/STY/T048
+doc15.txt_sentence_24_noun_15,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_24_noun_1,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_24_noun_7,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_20_noun_18,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_18_noun_15,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_18_noun_11,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_16_noun_7,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_14_noun_38,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_14_noun_17,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_20_noun_14,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_12_noun_12,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_12_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_12_noun_0,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_8_noun_12,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_8_noun_10,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_8_noun_6,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_22_noun_3,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_8_noun_1,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_20_noun_2,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_16_noun_6,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_14_noun_14,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_14_noun_10,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_11_noun_2,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_10_noun_2,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_41_noun_13,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_41_noun_1,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_39_noun_3,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_37_noun_11,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_35_noun_28,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_35_noun_0,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_31_noun_23,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_31_noun_2,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_24_noun_34,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_14_noun_10,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_8_noun_5,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_30_noun_23,Flowers,flowers,1.0,http://purl.bioontology.org/ontology/STY/T002
+doc14.txt_sentence_28_noun_12,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_28_noun_3,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_24_noun_15,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_20_noun_14,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_16_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_8_noun_5,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_13_noun_28,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_13_noun_5,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_7_noun_5,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_44_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_42_noun_1,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_38_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_38_noun_0,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_30_noun_28,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_44_noun_2,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_30_noun_19,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_30_noun_7,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_22_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_18_noun_5,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_9_noun_1,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_14_noun_8,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_13_noun_1,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_12_noun_1,Fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_16_noun_4,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc12.txt_sentence_30_noun_13,fentanyl,fentanyl,1.0,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc10.txt_sentence_13_noun_0,fentanyl pills,fentanyl pill,0.8,http://purl.bioontology.org/ontology/STY/T200
+doc10.txt_sentence_12_noun_0,fentanyl pills,fentanyl pill,0.8,http://purl.bioontology.org/ontology/STY/T200
+doc19.txt_sentence_44_noun_2,oxycodone pills,oxycodone pill,0.6,http://purl.bioontology.org/ontology/STY/T200
+doc19.txt_sentence_48_noun_3,oxycodone pills,oxycodone pill,0.6,http://purl.bioontology.org/ontology/STY/T200
+doc19.txt_sentence_36_noun_5,oxycodone pills,oxycodone pill,0.6,http://purl.bioontology.org/ontology/STY/T200
+doc1.txt_sentence_31_noun_3,combination,cam combination,0.4,http://purl.bioontology.org/ontology/STY/T061
+doc17.txt_sentence_8_noun_7,America,americas,0.2,http://purl.bioontology.org/ontology/STY/T083
+doc1.txt_sentence_35_noun_2,times,time,0.2,http://purl.bioontology.org/ontology/STY/T067|http://purl.bioontology.org/ontology/STY/T079
+doc1.txt_sentence_35_noun_4,times,time,0.2,http://purl.bioontology.org/ontology/STY/T067|http://purl.bioontology.org/ontology/STY/T079
+doc14.txt_sentence_40_noun_10,America,americas,0.2,http://purl.bioontology.org/ontology/STY/T083
+doc15.txt_sentence_56_noun_7,firearm,firearms,0.2,http://purl.bioontology.org/ontology/STY/T073
+doc15.txt_sentence_20_noun_16,alcohol,alcohols,0.2,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc15.txt_sentence_40_noun_10,America,americas,0.2,http://purl.bioontology.org/ontology/STY/T083
+doc11.txt_sentence_12_noun_1,times,time,0.2,http://purl.bioontology.org/ontology/STY/T067|http://purl.bioontology.org/ontology/STY/T079
+doc16.txt_sentence_29_noun_0,arrests,arrestin,0.2,http://purl.bioontology.org/ontology/STY/T116|http://purl.bioontology.org/ontology/STY/T129
+doc14.txt_sentence_20_noun_16,alcohol,alcohols,0.2,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc14.txt_sentence_56_noun_7,firearm,firearms,0.2,http://purl.bioontology.org/ontology/STY/T073
+doc1.txt_sentence_26_noun_7,substance,substance p,0.2,http://purl.bioontology.org/ontology/STY/T123|http://purl.bioontology.org/ontology/STY/T116
+doc14.txt_sentence_24_noun_17,times,time,0.2,http://purl.bioontology.org/ontology/STY/T067|http://purl.bioontology.org/ontology/STY/T079
+doc15.txt_sentence_24_noun_17,times,time,0.2,http://purl.bioontology.org/ontology/STY/T067|http://purl.bioontology.org/ontology/STY/T079
+doc1.txt_sentence_37_noun_18,arrests,arrestin,0.2,http://purl.bioontology.org/ontology/STY/T116|http://purl.bioontology.org/ontology/STY/T129
+doc1.txt_sentence_24_noun_6,substance,substance p,0.2,http://purl.bioontology.org/ontology/STY/T123|http://purl.bioontology.org/ontology/STY/T116
+doc1.txt_sentence_24_noun_6,substance,substance 86,0.2,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_24_noun_6,substance,substance s,0.2,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc11.txt_sentence_18_noun_7,crimes,crime,0.2,http://purl.bioontology.org/ontology/STY/T068|http://purl.bioontology.org/ontology/STY/T054
+doc1.txt_sentence_26_noun_7,substance,substance 86,0.2,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc1.txt_sentence_26_noun_7,substance,substance s,0.2,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_8_noun_35,substances,substance p,0.2,http://purl.bioontology.org/ontology/STY/T123|http://purl.bioontology.org/ontology/STY/T116
+doc19.txt_sentence_8_noun_35,substances,substance 86,0.2,http://purl.bioontology.org/ontology/STY/T109|http://purl.bioontology.org/ontology/STY/T121
+doc19.txt_sentence_8_noun_35,substances,substance,0.2,
+doc13.txt_sentence_13_noun_12,California,californium,0.2,http://purl.bioontology.org/ontology/STY/T196|http://purl.bioontology.org/ontology/STY/T121
+doc13.txt_sentence_13_noun_12,California,californine,0.2,http://purl.bioontology.org/ontology/STY/T123|http://purl.bioontology.org/ontology/STY/T109
+doc19.txt_sentence_12_noun_3,America,americas,0.2,http://purl.bioontology.org/ontology/STY/T083
