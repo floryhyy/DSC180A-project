@@ -1,26 +1,19 @@
 import pandas as pd
-def get_data(ontology,mesh_file,reddit_names):
-    on=pd.read_csv(ontology,usecols=['opioid1'])
-    mesh=pd.read_csv(mesh_file,usecols=['Preferred Label'])
-    mesh_ls = list(set(mesh['Preferred Label']))
-    mesh_terms = list(set([i.lower() for i in mesh_ls]))
-    on_ls = [i.strip('@en').strip('"') for i in list(set(on['opioid1']))]
-    terms = on_ls+mesh_terms
+from parse_text import spacy_txt
+
+def get_data(rxnorm_fp,mesh_fp,text_path):
+    #read in ontology list
     
-    all_text = []
-    author_ids = []
-    if '.json' in reddit_names:
-        df = pd.read_json(reddit_names,orient='index')
-        all_text.extend(list(df['text']))
-        author_ids.extend(list(df.index))
-    else:
-        text = reddit_names
-        filenames = open(text, 'r').read().split()
-        for t in filenames:
-            filepath = '/teams/DSC180A_FA20_A00/a07opioidoverdoseprevalence/data/' + t + '.json'
-            df = pd.read_json(filepath)
-            all_text.extend(list(df['text']))
-            author_ids.extend(list(df.index))
+    rx=pd.read_csv(rxnorm_fp,usecols=['Preferred Label','Semantic type UMLS property'])
+    mesh=pd.read_csv(mesh_fp,usecols=['Preferred Label','Semantic type UMLS property'])
+    term = pd.concat([rx,mesh])
+    term['Preferred Label'] = term['Preferred Label'].str.lower()
+    ontology = dict(zip(term['Preferred Label'],term['Semantic type UMLS property']))
+    terms = list(ontology.keys())
+    terms = sorted([i.strip('(+)-').strip('(),.-{').strip().replace("'",'').replace("}",'') for i in terms])
+    
+    s = spacy_txt()
+    docs, v, n= s.read_file(text_path)
         
-    return terms,all_text,author_ids
+    return terms,docs,ontology
 

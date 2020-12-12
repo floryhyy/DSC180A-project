@@ -1,46 +1,31 @@
-import nltk
-import nltk.data
-import pandas as pd
-import re
-import nltk
-def make_content_all(search_terms, text, authors):
+def make_content_text(content_ls,docs):
+    for doc in docs:
+    #Add noun to dictionary with its location as key
+        for sent_id in doc.sentences:
+            sent=doc.sentences[sent_id]
+            for n_id,noun in enumerate(sent.noun):
+                if len(noun) > 3:
+                    key=doc.doc_id+'_sentence_'+str(sent_id)+'_noun_'+str(n_id)
+                    noun = noun.lower()
+                    char=noun[0]
+                    if char in content_ls:
+                        content_ls[char].update({key:noun})
+                    else: 
+                        content_ls[char] = {key:noun}
+                        
+def make_content_search(search_terms):
     #Initialize a dictionary
-    content = dict()
-    
+    content_ls ={}
     #Add search terms to dictionary with numbered key
     for i in range(len(search_terms)):
-        if len(search_terms[i]) > 3:
-            content[i] = search_terms[i].strip().lower()
-                
-    #Add text to dictionary with author as key
-    for i in range(len(text)):
-        key_n = 0
-        for sentence in text[i].split():
-            s=sentence.replace(',',' ').strip().lower()
-            if len(s) > 5:
-                key = authors[i] + "_" + str(key_n)
-                content[key] = s
-                key_n += 1
-    return content
+        term = search_terms[i]
+        if len(term) > 3:
+            char = term[0]
+            if char in content_ls:
+                content_ls[char].update({i:term.strip().lower()})
+            else:
+                content_ls[char] = {i:term.strip().lower()}
+    return content_ls
 
-def text_to_list (text):
-    cleaned_text = re.sub("[^a-zA-Z]", " ", text)
-    words = cleaned_text.lower().split()
-    
-    return words
-
-def text_to_sentences (text):
-    try:
-        tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
-    except:
-        nltk.download('punkt')
-        tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
-    raw_sentences = tokenizer.tokenize(text.strip())
-
-    sentences=[]
-    for s in raw_sentences:
-        if len(s) > 0:
-            sentences.append(text_to_list(s))
-    return sentences
 
 

@@ -1,6 +1,4 @@
 {
-    "num_feat":100,
-    "num_neighbors":5,
     "n_permutations": 50,
     "n_gram": 3
 }
