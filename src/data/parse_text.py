@@ -2,6 +2,7 @@ import spacy
 import os
 import ParsedObj
 from collections import Counter
+import pandas as pd
 
 
 class spacy_txt():
@@ -12,20 +13,18 @@ class spacy_txt():
         docs = []
         for filename in sorted(os.listdir(dir_path)):
             doc = ParsedObj.bare_document()
-            file = open(dir_path+"/"+filename, "r",encoding="utf8",errors='ignore')
-            Lines = file.readlines()
-            i = 0
-            for l in Lines:
+            file = pd.read_csv(dir_path+"/"+filename)
+            texts = file['text'].values
+            for p, post in enumerate(texts):
                 sent = ParsedObj.bare_sentence()
-                ent, noun, verb = self.process_sent(l)
+                ent, noun, verb = self.process_sent(post)
                 n.extend(noun)
                 e.extend(ent)
                 sent.noun.extend(noun)
                 sent.verb.extend(verb)
                 sent.ner.extend(ent)
-                sent.sentence_id=i
+                sent.sentence_id=p
                 doc.sentences[i]= sent
-                i=i+1
             doc.path=dir_path+"/"+filename
             doc.doc_id=filename
             docs.append(doc)

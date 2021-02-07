@@ -7,12 +7,16 @@ sys.path.insert(0, 'src/data')
 sys.path.insert(0, 'src/analysis')
 sys.path.insert(0, 'src/model')
 
-from data import get_data
-from format_data import make_content_text
-from format_data import make_content_search
-from analysis import get_similar_ls
-from model import update_entity_type
-
+from data_reddit import get_data
+from data_reddit import parse_reddit
+from format_data_reddit import make_content_text
+from format_data_reddit import make_content_search
+from lsh import get_similar_ls
+from lsh import update_df
+from emotion import find_lexicon
+from emotion import limbic_score
+from dependence import denpendence_parsing
+from save_data import save_csv
 
 def main(targets):
     '''
@@ -23,42 +27,68 @@ def main(targets):
     '''
     if 'test' in targets:
         # load short version of data
-        text_fp = 'test/textdata'
+        folder = 'test/textdata'
+        SUBREDDIT="drugs"
+        QUERY="test"
         term1 = 'test/testdata/terms.csv'
         term2 = 'test/testdata/terms2.csv'
-        terms,docs,ontology= get_data(term1,term2,text_fp)
+        terms,ontology,df,QUERY= get_data(**data_cfg)
 
         #format data
+        dic={QUERY:df}
         content_ls = make_content_search(terms)
-        make_content_text(content_ls,docs)
+        make_content_text(content_ls,dic)
         
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
         # make the data target
         similar_ls = get_similar_ls(content_ls, **analysis_cfg)
         
-        update_entity_type(docs,similar_ls,terms,ontology, 'test_result.csv')
-    
+        # analysis emotion of sentence
+        find_lexicon(df)
+        df = limbic_score(df,QUERY)
+        
+        #update data
+        update_df(ls,df,terms,QUERY)
+        
+        #parse dependency for identified sentence
+        df = denpendence_parsing(df)    
+        save_csv(df,'test_data_result.csv')
+        
     if 'data' in targets or 'parse_entity' in targets:
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
         # load data
-        terms,docs,ontology= get_data(**data_cfg)
-
-        #format data
-        content_ls = make_content_search(terms)
-        make_content_text(content_ls,docs)
+        terms,ontology,df,QUERY= get_data(**data_cfg)
         
+        terms = terms[:10]
+        ontology = {key: ontology[key] for key in terms}
+        
+        #format data
+        dic={QUERY:df}
+        content_ls = make_content_search(terms)
+        make_content_text(content_ls,dic)
+
     if 'parse_entity' in targets:
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
         # get list of matching nouns 
         similar_ls = get_similar_ls(content_ls, **analysis_cfg)
+        
+        # analysis emotion of sentence
+        find_lexicon(df)
+        df = limbic_score(df,QUERY)
+        
+        #update data
+        update_df(ls,df,terms,QUERY)
+        
+        #parse dependency for identified sentence
+        df = denpendence_parsing(df)
 
         with open('config/model-params.json') as fh:
             model_cfg = json.load(fh)
         # make the data target
-        update_entity_type(docs,similar_ls,terms,ontology, **model_cfg)
+        save_csv(df,**model_cfg)
 
 
 if __name__ == '__main__':
