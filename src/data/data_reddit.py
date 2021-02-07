@@ -42,14 +42,15 @@ def parse_reddit(folder,SUBREDDIT,QUERY):
         user.append(i)
         content_type.append('post')
         text.append(content['text'])
-        comment = content['comments']
-        if len(comment)>0:
-            for c in comment:
-                comments = comment[c]
-                user.append(c)
-                content_type.append('comment')
-                text.append(comments['body'])
-                get_replies(comments)
+        if 'comments' in content:
+            comment = content['comments']
+            if len(comment)>0:
+                for c in comment:
+                    comments = comment[c]
+                    user.append(c)
+                    content_type.append('comment')
+                    text.append(comments['body'])
+                    get_replies(comments)
     df=pd.DataFrame({'user':user,'content_type':content_type,'text':text})
     def clean_text(i):
         tokens = [word.strip() for word in nltk.word_tokenize(i)]

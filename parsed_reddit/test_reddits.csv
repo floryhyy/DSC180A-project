@@ -1,0 +1,4 @@
+user,content_type,text,clean_words,clean_text
+user1,post,I love fentanyl and hydromorphone,"['I', 'love', 'fentanyl', 'and', 'hydromorphon']",I love fentanyl and hydromorphon
+user2,post,I hate fentanyl,"['I', 'hate', 'fentanyl']",I hate fentanyl
+user3,post,percocet give me headache,"['percocet', 'give', 'me', 'headach']",percocet give me headach
