@@ -47,9 +47,9 @@ def main(targets):
         similar_ls = get_similar_ls(content_ls, **analysis_cfg)
         
         # analysis emotion of sentence
-        #find_lexicon(df)
-        #df = limbic_score(df,QUERY)
-        df['is_emotion']=True
+        find_lexicon(df)
+        df = limbic_score(df,QUERY)
+        #df['is_emotion']=True
         
         #update data
         update_df(similar_ls,df,terms,QUERY)
