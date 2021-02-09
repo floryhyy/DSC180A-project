@@ -13,8 +13,8 @@ from format_data_reddit import make_content_text
 from format_data_reddit import make_content_search
 from lsh import get_similar_ls
 from lsh import update_df
-#from emotion import find_lexicon
-#from emotion import limbic_score
+from emotion import find_lexicon
+from emotion import limbic_score
 from dependence import denpendence_parsing
 from save_data import save_csv
 
