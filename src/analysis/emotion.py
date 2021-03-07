@@ -29,12 +29,15 @@ def find_lexicon(df):
     Suicidality = s.split(', ')
     s ="corona, virus, viral, covid, sars, influenza, pandemic, epidemic, quarantine, lockdown, distancing, national emergency, flatten, infect, ventilator, mask, symptomatic, epidemiolog, immun, incubation, transmission, vaccine"
     COVID19 = s.split(', ')
+    ls = ["corona", "#corona", "coronavirus", "#coronavirus", "covid", "#covid", "covid19", "#covid19", "covid-19", "#covid-19", "sarscov2", "#sarscov2", "sars cov2", "sars cov 2", "covid_19", "#covid_19", "#ncov", "ncov", "#ncov2019", "ncov2019", "2019-ncov", "#2019-ncov", "pandemic", "#pandemic" "#2019ncov", "2019ncov", "quarantine", "#quarantine", "flatten the curve", "flattening the curve", "#flatteningthecurve", "#flattenthecurve", "hand sanitizer", "#handsanitizer", "#lockdown", "lockdown", "social distancing", "#socialdistancing", "work from home", "#workfromhome", "working from home", "#workingfromhome", "ppe", "n95", "#ppe", "#n95", "#covidiots", "covidiots", "herd immunity", "#herdimmunity", "pneumonia", "#pneumonia", "chinese virus", "#chinesevirus", "wuhan virus", "#wuhanvirus", "kung flu", "#kungflu", "wearamask", "#wearamask", "wear a mask", "vaccine", "vaccines", "#vaccine", "#vaccines", "corona vaccine", "corona vaccines", "#coronavaccine", "#coronavaccines", "face shield", "#faceshield", "face shields"]
+    ls = [i.replace('#','') for i in ls]
+    COVID19 = COVID19+ls
     lexicon_manual  ={'Economic_Stress':Economic_Stress,"Isolation":Isolation,"Substance_Use":Substance_Use,"Guns":Guns,"Domestic_Stress":Domestic_Stress,"Suicidality":Suicidality,"COVID19":COVID19}
     for i in lexicon_manual:
         score_lexicon(lexicon_manual[i],i,df)
         
 def limbic_score(df,QUERY):
-    lexicon_fp = '/teams/DSC180A_FA20_A00/a07opioidoverdoseprevalence/data/NRC-Sentiment-Emotion-Lexicons/NRC-Emotion-Intensity-Lexicon-v1/NRC-Emotion-Intensity-Lexicon-v1.txt'
+    lexicon_fp = 'NRC-Sentiment-Emotion-Lexicons/NRC-Emotion-Intensity-Lexicon-v1/NRC-Emotion-Intensity-Lexicon-v1.txt'
     lexicon = load_lexicon(lexicon_fp,)
 
     terms_mapping = {'sentence': 'string'}

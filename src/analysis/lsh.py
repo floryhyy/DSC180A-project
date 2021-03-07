@@ -9,14 +9,25 @@ def create_lsh(content, n_permutations, n_gram):
     lsh = LSH(minhash, labels, no_of_bands=5)
     return lsh
 
-def create_lsh_all(content_ls,n_permutations, n_gram):
+def create_lsh_term(content_term,n_permutations, n_gram):
     lsh_ls = {}
-    for i in content_ls:
-        lsh_ls[i] = create_lsh(content_ls[i], n_permutations, n_gram)
+    for i in content_term:
+        lsh_ls[i] = create_lsh(content_term[i], n_permutations, n_gram)
+    return lsh_ls
+def update_lsh_text(lsh_ls,content_text,n_permutations, n_gram):
+    for i in content_text:
+        if i in lsh_ls:
+            labels = content_text[i].keys()
+            labels = [i+'test' for i in labels]
+            values = content_text[i].values()
+            minhash = MinHash(values, n_gram=n_gram, permutations=n_permutations, hash_bits=64, seed=3)
+            lsh_ls[i].update(minhash,labels)
+        else:
+            lsh_ls[i] = create_lsh(content_text[i], n_permutations, n_gram)
     return lsh_ls
 
-def get_similar_ls(content_ls,n_permutations, n_gram):
-    lsh_ls = create_lsh_all(content_ls,n_permutations, n_gram)
+def get_similar_ls(lsh_ls_term,content_text,n_permutations, n_gram):
+    lsh_ls = update_lsh_text(lsh_ls_term,content_text,n_permutations, n_gram)
     edge_list = {}
     for i in lsh_ls:
         edge_list[i] = lsh_ls[i].edge_list(jaccard_weighted=True)

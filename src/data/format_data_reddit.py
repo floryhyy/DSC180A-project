@@ -8,12 +8,11 @@ def make_content_text(content_ls,df_ls):
                 if len(word) > 3:
                     key=df_id+'_post_'+str(post_id)+'_word_'+str(word_id)
                     word = word.lower()
-                    char=word[:4]
+                    char=word[:3]
                     if char in content_ls:
                         content_ls[char].update({key:word})
                     else: 
                         content_ls[char] = {key:word}
-                        
 def make_content_search(search_terms):
     #Initialize a dictionary
     content_ls ={}
@@ -21,7 +20,7 @@ def make_content_search(search_terms):
     for i in range(len(search_terms)):
         term = search_terms[i]
         if len(term) > 3:
-            char = term[:4]
+            char = term[:3]
             if char in content_ls:
                 content_ls[char].update({i:term.strip().lower()})
             else:
