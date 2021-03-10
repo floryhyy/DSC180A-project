@@ -1,5 +1,6 @@
 from snapy import MinHash, LSH
 import re
+import numpy as np 
 def create_lsh(content, n_permutations, n_gram):
     labels = content.keys()
     values = content.values()
@@ -44,9 +45,9 @@ def get_similar_ls(lsh_ls_term,content_text,n_permutations, n_gram):
 def update_df(ls,df,terms,QUERY):
     term_dic={}
     score_dic={}
+    l = len(QUERY+'_post_')
     for n in ls:
-        word_id = n[0]
-        l = len(QUERY+'_post_')
+        word_id = n[0] 
         post_id = int(re.sub('_.+','',word_id[l:]))
 
         term_id = n[1]
@@ -57,5 +58,16 @@ def update_df(ls,df,terms,QUERY):
         else:
             term_dic[post_id] = [terms[term_id]]
             score_dic[post_id]=[score]
-    df.loc[list(term_dic.keys()),'matched_drugs'] = list(term_dic.values())
-    df.loc[list(score_dic.keys()),'matching_score'] = list(score_dic.values())
+            
+    def get_drug(x):
+        try:
+            return term_dic[x.name]
+        except:
+            return np.nan
+    def get_score(x):
+        try:
+            return score_dic[x.name]
+        except:
+            return np.nan
+    df['matched_drugs'] = df.apply(get_drug,axis=1)
+    df['matching_score'] = df.apply(get_score,axis=1)

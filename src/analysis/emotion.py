@@ -36,7 +36,7 @@ def find_lexicon(df):
     for i in lexicon_manual:
         score_lexicon(lexicon_manual[i],i,df)
         
-def limbic_score(df,QUERY):
+def limbic_score(df):
     lexicon_fp = 'NRC-Sentiment-Emotion-Lexicons/NRC-Emotion-Intensity-Lexicon-v1/NRC-Emotion-Intensity-Lexicon-v1.txt'
     lexicon = load_lexicon(lexicon_fp,)
 
@@ -56,9 +56,6 @@ def limbic_score(df,QUERY):
         return dic
     df['emotion_score'] = df['clean_text'].apply(get_emotion)
     df['average_score'] = df['emotion_score'].apply(average_emotion)
-    df.to_csv('parsed_reddit/'+QUERY+'_reddits.csv',index=False)
-    df=pd.read_csv('parsed_reddit/'+QUERY+'_reddits.csv')
-    df['is_emotion'] = (df['Economic_Stress']!='[]')|(df['Isolation']!='[]')|(df['Substance_Use']!='[]')|(df['Guns']!='[]')|(df['Domestic_Stress']!='[]')|(df['Suicidality']!='[]')|(df['COVID19']!='[]')|(df['emotion_score']!='[]')
     return df
         
     
