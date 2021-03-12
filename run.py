@@ -11,11 +11,11 @@ from data_reddit import get_data
 from data_reddit import parse_reddit
 from format_data_reddit import make_content_text
 from format_data_reddit import make_content_search
-from lsh import get_similar_ls
+from lsh import *
+#from lsh import process_all
 from lsh import update_df
 from emotion import find_lexicon
 from emotion import limbic_score
-from dependence import denpendence_parsing
 from save_data import save_csv
 
 def main(targets):
@@ -26,36 +26,30 @@ def main(targets):
     `main` runs the targets in order of data=>analysis=>model.
     '''
     if 'test' in targets:
-        with open('config/data-params.json') as fh:
-            data_cfg = json.load(fh)
         # load short version of data
-        folder = 'test/textdata'
-        SUBREDDIT="drugs"
+        fp = 'test/textdata/drugs_test_year.json'
         QUERY="test"
         term1 = 'test/testdata/terms.csv'
         term2 = 'test/testdata/terms2.csv'
-        terms,ontology,df,QUERY= get_data(term1,term2,folder,SUBREDDIT,QUERY)
-
+        terms,ontology,df,QUERY= get_data(term1,term2,fp,QUERY)
         #format data
         dic={QUERY:df}
-        content_ls = make_content_search(terms)
-        make_content_text(content_ls,dic)
+        content_term = make_content_search(terms)
         
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
-        # make the data target
-        similar_ls = get_similar_ls(content_ls, **analysis_cfg)
+        # finding drug terms
+        lsh_ls_term = create_lsh_term(content_term,**analysis_cfg)
+        ls_total = process_all(lsh_ls_term,df,QUERY, **analysis_cfg)
+
+        update_df(ls_total,df,terms,QUERY) 
         
         # analysis emotion of sentence
         find_lexicon(df)
-        df = limbic_score(df,QUERY)
+        df = limbic_score(df)
         #df['is_emotion']=True
-        
-        #update data
-        update_df(similar_ls,df,terms,QUERY)
-        
+                
         #parse dependency for identified sentence
-        df = denpendence_parsing(df)    
         save_csv(df,'test_data_result.csv')
         
     if 'data' in targets or 'parse_entity' in targets:

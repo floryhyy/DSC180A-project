@@ -37,7 +37,7 @@ def find_lexicon(df):
         score_lexicon(lexicon_manual[i],i,df)
         
 def limbic_score(df):
-    lexicon_fp = 'NRC-Sentiment-Emotion-Lexicons/NRC-Emotion-Intensity-Lexicon-v1/NRC-Emotion-Intensity-Lexicon-v1.txt'
+    lexicon_fp = 'NRC-Emotion-Intensity-Lexicon-v1.txt'
     lexicon = load_lexicon(lexicon_fp,)
 
     terms_mapping = {'sentence': 'string'}

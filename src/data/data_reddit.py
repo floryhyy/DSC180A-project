@@ -4,9 +4,10 @@ import json
 from nltk.stem import PorterStemmer
 import nltk
 from nltk.tokenize import word_tokenize
+import numpy as np
 
 
-def get_data(rxnorm_fp,mesh_fp):
+def get_data(rxnorm_fp,mesh_fp,fp,QUERY):
     #read in ontology list
     
     rx=pd.read_csv(rxnorm_fp,usecols=['Preferred Label','Semantic type UMLS property'])
@@ -17,44 +18,91 @@ def get_data(rxnorm_fp,mesh_fp):
     ontology = dict(zip(term['Preferred Label'],term['Semantic type UMLS property']))
     terms = list(ontology.keys())
     terms = sorted(terms)
-    return terms,ontology
-def parse_reddit(SUBREDDIT,QUERY):
-    TIME = 'year'
-    with open('reddit_data/'+SUBREDDIT + '_' + QUERY + '_' + TIME + '.json', 'r') as outfile:
+    df,QUERY = parse_reddit(fp,QUERY)
+    return terms,ontology,df,QUERY
+def parse_reddit(fp,QUERY):
+    with open(fp) as outfile:
         data = json.load(outfile)
     user=[]
-    content_type=[]
+    current_id=[]
+    parent_id = []
     text=[]
-    def get_replies(comment):
+    score=[]
+    created = []
+    url=[]
+
+    is_submitter = []
+    post_only = []
+    def get_replies(comment,parent,first_reply):
         if len(comment['replies']) > 0:
+            g = 0
             for n in comment['replies']:
                 c = comment['replies'][n]
                 user.append(n)
-                content_type.append('reply')
+                if first_reply:
+                    current = parent+'_reply_'+str(g)
+                else:
+                    current = parent+'.'+str(g)
+                current_id.append(current)
+                parent_id.append(parent)
+                g+=1
+
                 text.append(c['body'])
-                get_replies(c)
+                score.append(c['score'])
+                url.append(c['link'])
+                created.append(c['created'])
+                is_submitter.append(c['is_submitter'])
+                post_only.append(np.nan)
+
+                get_replies(c,current,False)
         else:
             return
-
+    post_id = 0
     for i in data:
+        if i =='https:':
+            continue
         content = data[i]
         user.append(i)
-        content_type.append('post')
+        idd = 'post_'+str(post_id)
+        current_id.append(idd)
+        parent_id.append(np.nan)
+        post_id +=1
+
+        #append related content
         text.append(content['text'])
+        score.append(content['score'])
+        url.append(content['url'])
+        created.append(content['created'])
+
+        post_only.append({k:content[k] for k in ('author','flair','num_comments','title','subreddit') if k in content})
+        is_submitter.append(np.nan)
+
+
         comment = content['comments']
+        comment_id = 0
         if len(comment)>0:
             for c in comment:
                 comments = comment[c]
                 user.append(c)
-                content_type.append('comment')
+                current_id.append(idd+'_comment_'+str(comment_id))
+                parent_id.append(idd)
+
                 text.append(comments['body'])
-                get_replies(comments)
-    df=pd.DataFrame({'user':user,'content_type':content_type,'text':text})
+                score.append(comments['score'])
+                url.append(comments['link'])
+                created.append(comments['created'])
+                is_submitter.append(comments['is_submitter'])
+                post_only.append(np.nan)
+
+                get_replies(comments,idd+'_comment_'+str(comment_id),True)
+                comment_id +=1
     def clean_text(i):
         tokens = [word.strip() for word in nltk.word_tokenize(i)]
         stemmer = PorterStemmer()
         stems = [stemmer.stem(item) for item in tokens]
         return stems
+    df=pd.DataFrame({'user':user,'parent_id':parent_id,'current_id':current_id,'text':text,'score':score,'created':created,"url":url,"is_submitter":is_submitter,"post_only":post_only})
+    df.to_csv('parsed_reddit/scraper_output2_parsed.csv',index=False)
     df['clean_words'] = df['text'].apply(clean_text)
     df['clean_text'] = df['clean_words'].apply(lambda x : ' '.join(x))
     df.to_csv('parsed_reddit/'+QUERY+'_reddits.csv',index=False)

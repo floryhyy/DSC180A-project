@@ -1,6 +1,9 @@
 from snapy import MinHash, LSH
 import re
 import numpy as np 
+from format_data_reddit import make_content_text
+
+import copy
 def create_lsh(content, n_permutations, n_gram):
     labels = content.keys()
     values = content.values()
@@ -26,7 +29,17 @@ def update_lsh_text(lsh_ls,content_text,n_permutations, n_gram):
         else:
             lsh_ls[i] = create_lsh(content_text[i], n_permutations, n_gram)
     return lsh_ls
-
+def process_all(lsh_ls_term,df,QUERY,n_permutations, n_gram):
+    sections = df.shape[0]//1000
+    ls_total = []
+    for i in range(sections+1):
+        dic={QUERY:df[i*1000:(i+1)*1000]}
+        content_text = {}
+        lsh_ls = copy.deepcopy(lsh_ls_term)
+        make_content_text(content_text,dic)
+        ls_pre = get_similar_ls(lsh_ls,content_text,n_permutations, n_gram)
+        ls_total += ls_pre
+    return ls_total
 def get_similar_ls(lsh_ls_term,content_text,n_permutations, n_gram):
     lsh_ls = update_lsh_text(lsh_ls_term,content_text,n_permutations, n_gram)
     edge_list = {}
