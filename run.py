@@ -33,7 +33,6 @@ def main(targets):
         term2 = 'test/testdata/terms2.csv'
         terms,ontology,df,QUERY= get_data(term1,term2,fp,QUERY)
         #format data
-        dic={QUERY:df}
         content_term = make_content_search(terms)
         
         with open('config/analysis-params.json') as fh:
@@ -47,37 +46,33 @@ def main(targets):
         # analysis emotion of sentence
         find_lexicon(df)
         df = limbic_score(df)
-        #df['is_emotion']=True
-                
+
         #parse dependency for identified sentence
         save_csv(df,'test_data_result.csv')
         
-    if 'data' in targets or 'parse_entity' in targets:
+    if 'data' in targets or 'analysis' in targets:
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
         # load data
         terms,ontology,df,QUERY= get_data(**data_cfg)
                 
         #format data
-        dic={QUERY:df}
-        content_ls = make_content_search(terms)
-        make_content_text(content_ls,dic)
+        content_term = make_content_search(terms)
 
-    if 'parse_entity' in targets:
+    if 'analysis' in targets:
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
-        # get list of matching nouns 
-        similar_ls = get_similar_ls(content_ls, **analysis_cfg)
+
+        # get list of matching ontologies
+        lsh_ls_term = create_lsh_term(content_term,**analysis_cfg)
+        ls_total = process_all(lsh_ls_term,df,QUERY, **analysis_cfg)
+ 
+        #update data
+        update_df(ls_total,df,terms,QUERY) 
         
         # analysis emotion of sentence
         find_lexicon(df)
-        df = limbic_score(df,QUERY)
-        
-        #update data
-        update_df(similar_ls,df,terms,QUERY)
-        
-        #parse dependency for identified sentence
-        df = denpendence_parsing(df)
+        df = limbic_score(df)
 
         with open('config/model-params.json') as fh:
             model_cfg = json.load(fh)
